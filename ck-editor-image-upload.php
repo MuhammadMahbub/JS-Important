@@ -3,6 +3,7 @@
 OR
 <div id="test-area"></div>
 
+<!-------------- Script -------->
 <script>
         ClassicEditor
 	   .create( document.querySelector('#test-area') ,{
@@ -14,9 +15,13 @@ OR
 
 
 
+//------------ Route-------------\\
 Route::post('ckeditor/image/uplaod', [BlogController::class, 'ckeditor_image_uplaod'])->name('ckeditor_image.upload');
 
 
+
+
+//------ Controller --------\\
 
 public function ckeditor_image_uplaod(Request $request)
     {
